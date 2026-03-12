@@ -1,0 +1,53 @@
+{
+  "name": "bukkapay-backend",
+  "version": "1.0.0",
+  "description": "BukkaPay Express.js backend API with PostgreSQL",
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "20",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc --skipLibCheck || true",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "bukkapay",
+    "wallet",
+    "payments",
+    "api",
+    "express"
+  ],
+  "author": "BukkaPay",
+  "license": "MIT",
+  "dependencies": {
+    "@simplewebauthn/server": "^13.2.3",
+    "@supabase/supabase-js": "^2.94.0",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "latest",
+    "drizzle-kit": "^0.31.9",
+    "drizzle-orm": "^0.45.1",
+    "drizzle-zod": "^0.8.3",
+    "express": "^5.2.1",
+    "nanoid": "^5.1.6",
+    "pg": "^8.18.0",
+    "stripe": "^20.2.0",
+    "stripe-replit-sync": "^1.0.0",
+    "zod": "^3.25.76",
+    "zod-validation-error": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.5",
+    "@types/pg": "^8.18.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
